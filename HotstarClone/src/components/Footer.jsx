@@ -3,49 +3,105 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div>
-        <div className='footer'>
-            <div>
-                <h3>Company</h3>
-                <a href=""><h4>About us</h4></a>
-                <a href=""><h4>Careers</h4></a>
-                <p style={{marginTop:"20px"}}>&copy;2023 STAR . All rights reserved</p>
-                <a href=''><p>Terms of Use &nbsp; Privacy  Policy &nbsp; FAQ </p></a>
-            </div>
-
-            <div>
-                <h3>View website in</h3>
-                <a href=""><h4>English</h4></a>
-                
-            </div>
-
-            <div>
-                <h3>Need help ?</h3>
-                <a href=""><h4>Visit Help center</h4></a>
-                <a href=""><h4>Share feedback</h4></a>
-               
-            </div>
-
-            <div>
-                <h3 style={{textAlign:"center"}}>Connect with Us</h3>
-                
-                <div className='ic'>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-                <div className='emg'>
-                    <img src="https://o.remove.bg/downloads/6da3e562-e93e-46f4-bfa3-b9efd2809260/png-clipart-google-play-app-store-apple-apple-text-rectangle-removebg-preview.png" alt="" />
-
-                </div>
-
-               
-            </div>
-
-            
-
+    <footer className='footer-container'>
+      <div className='footer-wave'>
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" className="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
+        </svg>
+      </div>
+      
+      <div className='footer-content'>
+        <div className='footer-section'>
+          <div className='footer-logo'>
+            <h2>🎬 Hotstar Clone</h2>
+            <p>Your ultimate entertainment destination</p>
+          </div>
         </div>
 
-    </div>
+        <div className='footer-section'>
+          <h3><i className="fas fa-building"></i> Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
+        </div>
+
+        <div className='footer-section'>
+          <h3><i className="fas fa-globe"></i> Languages</h3>
+          <ul>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Hindi</a></li>
+            <li><a href="#">Tamil</a></li>
+            <li><a href="#">Telugu</a></li>
+          </ul>
+        </div>
+
+        <div className='footer-section'>
+          <h3><i className="fas fa-question-circle"></i> Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Report Issue</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div className='footer-section'>
+          <h3><i className="fas fa-share-alt"></i> Connect With Us</h3>
+          <div className='social-icons'>
+            <a href="#" className='social-icon facebook'>
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" className='social-icon twitter'>
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className='social-icon instagram'>
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" className='social-icon youtube'>
+              <i className="fab fa-youtube"></i>
+            </a>
+            <a href="#" className='social-icon linkedin'>
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          
+          <div className='download-apps'>
+            <h4>Download Our Apps</h4>
+            <div className='app-buttons'>
+              <a href="#" className='app-button'>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+              </a>
+              <a href="#" className='app-button'>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='footer-bottom'>
+        <div className='footer-divider'></div>
+        <div className='footer-bottom-content'>
+          <div className='copyright'>
+            <p>&copy; 2023 STAR Entertainment. All rights reserved.</p>
+          </div>
+          <div className='footer-links'>
+            <a href="#">Terms of Use</a>
+            <span className='separator'>|</span>
+            <a href="#">Privacy Policy</a>
+            <span className='separator'>|</span>
+            <a href="#">Cookie Policy</a>
+            <span className='separator'>|</span>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   )
 }
 
