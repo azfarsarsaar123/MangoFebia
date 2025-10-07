@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Platforms from './components/Platforms';
 import Row from './components/Row';
 import requests from './request';
+import DummyBotUI from './Bot';
 
 function App() {
   return (
@@ -56,10 +57,10 @@ function App() {
       <Footer/>
     </div>
     
-    
+    <DummyBotUI/>
+    </div>
    </div>
-      </div>
-   </div>
+  </div>
     </>
   );
 }
